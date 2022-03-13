@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Food-Ordering-App</title>
+</head>
+
+<body>
+    <div class="home">
+        <header>
+            <nav class="navbar">
+                <div>
+                    <h1 class="title">Food Ordering App</h1>
+                    <a class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></a>
+                    <div class="user inactive">
+                        <button id="cart" class="total">0 Cart</button>
+                        <button id="sign-up">Sign up</button>
+                        <button id="sign-in">Sign in</button>
+                    </div>
+                </div>
+                <div>
+                    <form id="search-form">
+                        <div class="search-group">
+                            <input type="search" id="search" autofocus placeholder="Search your dishes here...">
+                        </div>
+                        <input type="submit" class="search-btn" value="Search">
+                    </form>
+                    <div class="filter-sort inactive">
+                        <button id="filter">Filter</button>
+                        <div class="filter hidden"></div>
+                        <div class="sort">
+                            <label for="sort">Sort :</label>
+                            <select id="sort">
+                            <option value="none">None</option>
+                            <option value="rating">Rating</option>
+                            <option value="price-high-low">Prices High to low</option>
+                            <option value="price-low-high">Prices Low to high</option>
+                            <option value="cal-high-low">Calories High to low</option>
+                            <option value="cal-low-high">Calories Low to high</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+        </main>
+    </div>
+    <div class="cart hidden">
+        <div class="cart-head">
+            <button class="go-back">&lt Go Back</button>
+            <h1 class="orders">My Orders</h1>
+            <h2 class="total">Cart</h2>
+        </div>
+        <div class="order-details"></div>
+        <div class="grand-total">
+            <p class="total-price">Total : 0 ₹</p>
+        </div>
+    </div>
+    <footer>
+        <p>&reg; Food Ordering App</p>
+    </footer>
+</body>
+
+</html>
