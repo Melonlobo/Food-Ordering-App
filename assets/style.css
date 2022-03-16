@@ -585,6 +585,16 @@ footer {
     }
 }
 
+.one-cross {
+    transform: translateY(.85rem) rotate(-45deg);
+    transform-origin: 50% 50%;
+}
+
+.three-cross {
+    transform: translateY(-.85rem) rotate(45deg);
+    transform-origin: 50% 50%;
+}
+
 @media all and (max-width:850px) {
     .cart-item-card {
         display: flex;
@@ -636,6 +646,14 @@ footer {
     }
     footer {
         font-size: 1.4rem;
+    }
+    .one-cross {
+        transform: translateY(.6rem) rotate(-45deg);
+        transform-origin: 50% 50%;
+    }
+    .three-cross {
+        transform: translateY(-.6rem) rotate(45deg);
+        transform-origin: 50% 50%;
     }
 }
 

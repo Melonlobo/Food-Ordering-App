@@ -145,6 +145,9 @@ navbar.addEventListener('click', (e) => {
 });
 
 hamburger.addEventListener('click', () => {
+	hamburger.firstChild.classList.toggle('one-cross');
+	hamburger.children[1].classList.toggle('hidden');
+	hamburger.lastChild.classList.toggle('three-cross');
 	user.classList.toggle('inactive');
 	filterSort.classList.toggle('inactive');
 });
