@@ -170,6 +170,9 @@ function showCart() {
 		cartDetails.innerText = 'Your cart is Empty...';
 	}
 	home.classList.add('hidden');
+	hamburger.firstChild.classList.remove('one-cross');
+	hamburger.children[1].classList.remove('hidden');
+	hamburger.lastChild.classList.remove('three-cross');
 	cartDisplay.classList.remove('hidden');
 }
 
